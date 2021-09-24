@@ -1,0 +1,44 @@
+.features {
+    margin-top: 100px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    h1 {
+        font-family: $poppins;
+        font-size: 48px;
+        font-weight: 700;
+        padding-bottom: 45px;
+    }
+    h2 {
+        font-family: $poppins;
+        font-size: 22px;
+        font-weight: 700;
+        color: $dark;
+        padding-bottom: 30px;
+    }
+    .features-left {
+        width: 444px;
+    }
+    #text-features-left {
+        padding-bottom: 40px;
+    }
+    .features-h1-div {
+        width: 408px;
+    }
+    .features-right {
+        padding-left: 58px;
+        width: 726px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 70px;
+        column-gap: 150px;
+    }
+    .features-box {
+        img {
+            padding-bottom: 25px;
+        }
+        
+    }
+}
