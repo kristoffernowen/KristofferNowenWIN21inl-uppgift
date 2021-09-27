@@ -1,0 +1,47 @@
+.contact-us .container {
+    max-width:970px;
+   
+    h1 {
+        font-family: $poppins;
+        font-size: 48px;
+        text-align: center;
+        padding: 0 80px 50px 80px;
+    }
+    .contact-us-text-div p {
+        padding: 0 210px;
+        text-align: center;
+    }
+    .numbers-flex {
+        display: flex;
+        justify-content: space-between;
+        div {
+            text-align: center;
+            padding: 100px 0 75px 0;
+        }
+    }
+    h3 {
+        font-family: $poppins;
+        font-size: 42px;
+        font-weight: 500;
+        color: $pinkish;
+    }
+    .contact-us-button-div {
+        position: relative;
+        width: 630px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 45px;
+        box-shadow: 2px 2px 5px 5px rgba(224, 216, 216, 0.693);
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    #map {
+        position: absolute;
+        z-index: -1;
+        top: -230px;
+        left:-100px;
+    }
+}

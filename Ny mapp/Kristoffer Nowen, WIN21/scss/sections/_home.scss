@@ -4,7 +4,22 @@
     top: 113px;
     z-index: -2;
 }
-.home .container {
+#blob1 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    height: auto;
+    width: 100%;
+    // right: -200px;
+   
+    margin-right: 0;
+    overflow: hidden;
+    clip-path: inset(0 50% 30% 0);
+    z-index: -1;
+}
+.home {
+    // max-width: 1608px;
+    .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,20 +35,17 @@
     p {
         padding-bottom: 35px;
     }
+} 
 }
 .home-left {
     width:50%;
 }
 .home-right {
     width: 50%;
+    position: relative;
     
 }
-#blob1 {
-    position: absolute;
-    top: 50px;
-    right: -200px;
-    z-index: -1;
-}
+
 #screen1 {
     margin-left: -100px;
     // width: 50%;

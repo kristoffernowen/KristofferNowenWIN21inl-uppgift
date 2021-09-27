@@ -11,6 +11,13 @@
     .brand-div {
         padding-top: 50px;
         padding-bottom: 40px;
+        font-family: $poppins;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-start;
+    }
+    .navbar-right-div {
+        padding-top: 10px;
     }
     a {
         padding-left: 25px;
