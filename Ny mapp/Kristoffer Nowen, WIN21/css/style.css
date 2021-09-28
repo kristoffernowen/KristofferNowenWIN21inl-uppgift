@@ -59,7 +59,15 @@
 }
 
 .navbar .navbar-right-div {
+  display: none;
   padding-top: 10px;
+}
+
+@media (min-width: 1600px) {
+  .navbar .navbar-right-div {
+    display: block;
+    background-color: hotpink;
+  }
 }
 
 .navbar a {
@@ -84,29 +92,33 @@
   font-weight: 500;
 }
 
-#bghome {
-  position: absolute;
-  top: 113px;
-  z-index: -2;
+.home {
+  background-image: url(../Images/BGhome.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -113px;
 }
 
-#blob1 {
-  position: absolute;
-  top: 50px;
-  left: 200px;
-  height: auto;
-  width: 100%;
-  margin-right: 0;
-  overflow: hidden;
-  clip-path: inset(0 50% 30% 0);
-  z-index: -1;
+.home-layer-2 {
+  background-image: url(../Images/Objects.svg);
+  background-repeat: no-repeat;
+  background-position: 830px -115px;
+}
+
+.home .home-test {
+  background-color: hotpink;
+}
+
+@media (min-width: 1600px) {
+  .home .home-test {
+    background-color: khaki;
+  }
 }
 
 .home .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 810px;
+  height: 820px;
 }
 
 .home .container h1 {
@@ -119,10 +131,6 @@
 
 .home .container p {
   padding-bottom: 35px;
-}
-
-.home-left {
-  width: 50%;
 }
 
 .home-right {

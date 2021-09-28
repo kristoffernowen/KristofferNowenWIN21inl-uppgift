@@ -17,7 +17,14 @@
         align-items: flex-start;
     }
     .navbar-right-div {
+        display: none;
         padding-top: 10px;
+    }
+    @media(min-width:1600px) {
+        .navbar-right-div {
+            display: block;
+            background-color: hotpink;
+        }
     }
     a {
         padding-left: 25px;
