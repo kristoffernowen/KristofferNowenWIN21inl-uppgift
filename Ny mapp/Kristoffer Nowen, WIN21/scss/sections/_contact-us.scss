@@ -1,15 +1,25 @@
 .contact-us .container {
     max-width:970px;
-   
-    h1 {
-        font-family: $poppins;
-        font-size: 48px;
-        text-align: center;
-        padding: 0 80px 50px 80px;
-    }
-    .contact-us-text-div p {
-        padding: 0 210px;
-        text-align: center;
+    .contact-header-text-flex {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .div-contact-header {
+                width: 730px;
+                height: 134px;
+                margin-bottom: 50px;
+            
+            h1 {
+                text-align: center;
+                // padding: 0 80px 50px 80px;
+            }
+        }
+        .contact-us-text-div {
+            width:516px;
+            height: 67px; 
+            text-align: center;    
+        }   
     }
     .numbers-flex {
         display: flex;
@@ -28,20 +38,30 @@
     .contact-us-button-div {
         position: relative;
         width: 630px;
+        border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
         padding: 45px;
-        box-shadow: 2px 2px 5px 5px rgba(224, 216, 216, 0.693);
+        box-shadow: 1px 5px 5px 3px rgba(240, 238, 238, 0.911);
         background-color: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        .button {
+            padding: 17px 25px;
+        }
     }
     #map {
         position: absolute;
         z-index: -1;
         top: -230px;
-        left:-100px;
+        left:-75px;
+    }
+    h2 {
+        font-family: $poppins;
+        font-size: 21px;
+        font-weight: 600;
+        color: $black;
+        padding-bottom: 5px;
     }
 }

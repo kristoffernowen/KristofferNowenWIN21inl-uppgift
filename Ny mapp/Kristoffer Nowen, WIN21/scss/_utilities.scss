@@ -1,8 +1,16 @@
 .container {
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
+    padding: 0 15px;
+   
     margin-left: auto;
     margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+        padding: 0;
+    }
 }
 @media (min-width: 1400px) {
     .container {
@@ -14,10 +22,18 @@
 }
 .button {
    background: linear-gradient(90deg, rgba(238,48,122,1) 0%, rgba(252,139,83,1) 100%);
+   font-family: $roboto;
    font-size: 16px;
    font-weight: 700;
    color: white;
-   padding: 25px 35px;
+   padding: 17px 40px;
    border-radius: 5px;
    border: none;
+   
+   &:hover {
+        transition: ease-in-out 0.5s;
+    //    border: 10px solid $grey;
+        background: linear-gradient(90deg, rgba(238,48,122,0.65) 0%, rgba(252,139,83,0.65) 100%);
+        color: $black;
+   }
 }

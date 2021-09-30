@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="keywords" content="Mattin-Lassei, best">
+    <meta name="description" content="Mattin-Lassei best solutions">
     <meta name="author" content="Kristoffer Nowén">
-    <title></title>
+    <title>Mattin Lassei Digital Systems</title>
     <script src="https://kit.fontawesome.com/124ac6c2b5.js" crossorigin="anonymous"></script>
 
 
@@ -25,22 +25,31 @@
                 <img src="./Images/MLLogo.svg" alt="logo Hans Mattin-Lassei">
             </div>
             <div class="navbar-right-div">
-                <a href="">Home</a>
-                <a href="">Features</a>
-                <a href="">Pages</a>
-                <a href="">Blog</a>
-                <a href="">Contact</a>
-                <i class="fad fa-search"></i>
-                <button>TRY IT FOR FREE</button>
+                <a href="#home">HOME</a>
+                <a href="#features">FEATURES</a>
+                <a href="#pages">PAGES</a>
+                <a href="#blog">BLOG</a>
+                <a href="#contact-us">CONTACT</a>
+                <i class="fad fa-search">
+                    <form class="navbar-search">
+                        <label for="forsearch">Search:</label><br>
+                        <input type="text" id="forsearch" name="forsearch"><br>
+                    </form>
+                </i>
+                <button>TRY IT FREE</button>
+            </div>
+            <div class="navbar-mobile">
+                <button>TRY IT FREE</button>
             </div>
         </div>
     </nav>
 
     <!-- Home -->
+    <!-- <div class="home-back-layer"> -->
 
-    <section class="home">
-        <div class="home-test">tobias x</div>
+    <section id="home" class="home">
         <div class="home-layer-2">
+
             <!-- <img id="bghome" src="/Images/BGhome.svg" alt=""> -->
             <!-- <img id="blob1" src="/Images/blob1.svg" alt=""> -->
             <div class="container">
@@ -57,10 +66,11 @@
             </div>
         </div>
     </section>
+    <!-- </div> -->
 
     <!-- Features -->
 
-    <section class="features">
+    <section id="features" class="features">
         <div class="container">
             <div class="features-left">
                 <div class="features-h1-div">
@@ -73,7 +83,7 @@
             </div>
             <div class="features-right">
                 <div class="features-box">
-                    <img src="./Images/Icon1.png" alt="">
+                    <img src="./Images/Icon1.svg" alt="">
                     <h2>Page Faster</h2>
                     <p>These folk are energized with a complex problem and breaking grappling ullamco.</p>
                 </div>
@@ -95,7 +105,7 @@
 
     <!-- pages -->
 
-    <section class="pages">
+    <section id="pages" class="pages">
         <div class="container">
             <div class="pages-left-div">
                 <img id="big-black-screen" src="./Images/big-black-screen.svg" alt="">
@@ -108,8 +118,8 @@
                         <h2>01</h2>
                     </div>
                     <div>
-                        <!-- <h3></h3> -->
-                        <p>Donec egestas purus ut felis dignissim<br> suscipit. Vestibulum vehicula est<br> condimentum
+                        <h3>Get Started</h3>
+                        <p>Donec egestas purus ut felis dignissim suscipit. Vestibulum vehicula est condimentum
                             posuere
                             interdum.</p>
                     </div>
@@ -117,8 +127,8 @@
                         <h2>02</h2>
                     </div>
                     <div>
-                        <!-- <h3></h3> -->
-                        <p>Donec egestas purus ut felis dignissim<br> suscipit. Vestibulum vehicula est<br> condimentum
+                        <h3>Build Our Mind Maps</h3>
+                        <p>Donec egestas purus ut felis dignissim suscipit. Vestibulum vehicula est condimentum
                             posuere
                             interdum.</p>
                     </div>
@@ -126,8 +136,8 @@
                         <h2>03</h2>
                     </div>
                     <div>
-                        <!-- <h3></h3> -->
-                        <p>Donec egestas purus ut felis dignissim<br> suscipit. Vestibulum vehicula est<br> condimentum
+                        <h3>Start Up Our Ideas</h3>
+                        <p>Donec egestas purus ut felis dignissim suscipit. Vestibulum vehicula est condimentum
                             posuere
                             interdum.</p>
                     </div>
@@ -138,12 +148,17 @@
 
     <!-- contact us -->
 
-    <section class="contact-us">
+    <section id="contact-us" class="contact-us">
         <div class="container">
-            <h1>We are the best online software firm in the world</h1>
-            <div class="contact-us-text-div">
-                <p>You can help customers in real-time across all of your channels from email, social, website, iOS, and
-                    android apps.</p>
+            <div class="contact-header-text-flex">
+                <div class="div-contact-header">
+                    <h1>We are the best online software firm in the world</h1>
+                </div>
+                <div class="contact-us-text-div">
+                    <p>You can help customers in real-time across all of your channels from email, social, website, iOS,
+                        and
+                        android apps.</p>
+                </div>
             </div>
             <div class="numbers-flex">
                 <div>
@@ -166,7 +181,7 @@
             <div class="contact-us-button-div">
                 <img id="map" src="./Images/Map.svg" alt="">
                 <div>
-                    <p>Have any question about us?</p>
+                    <h2>Have any question about us?</h2>
                     <p>Do not hesitate to contact us</p>
                 </div>
                 <div>
@@ -179,12 +194,17 @@
 
     <!-- Blog -->
 
-    <section class="blog">
+    <section id="blog" class="blog">
         <div class="container">
-            <div class="blog-header">
-                <h1>Latest insights news the<br> industry</h1>
-                <p>You can help customers in real-time across all of your channels<br> from email, social, website, iOS,
-                    and android apps.</p>
+            <div class="divblogflex">
+                <div class="blog-header">
+                    <h1>Latest insights news the industry</h1>
+                    <div class="div-customer-p">
+                        <p>You can help customers in real-time across all of your channels from email, social, website,
+                            iOS,
+                            and android apps.</p>
+                    </div>
+                </div>
             </div>
             <div class="blog-grid">
                 <div>
@@ -229,6 +249,7 @@
             </div>
         </div>
     </section>
+    <div class="blog-extra-length"></div>
 </body>
 
 </html>

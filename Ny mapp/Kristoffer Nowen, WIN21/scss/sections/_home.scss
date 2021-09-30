@@ -1,58 +1,80 @@
+// .home-back-layer {
+//     background-image: url(Images\Slide1.jpg);
+// }
+
 .home {
     background-image: url(../Images/BGhome.svg);
     background-repeat: no-repeat;   
     background-position: 0 -113px;
 }
 
+@media (min-width: 1400px) {
 .home-layer-2 {
     background-image: url(../Images/Objects.svg);
     background-repeat: no-repeat;
-    background-position: 830px -115px;
-    
-    // 830px -115px;
+    background-position: 900px -110px;
 }
-// #bghome {
-//     position: absolute;
-//     top: 113px;
-//     z-index: -2;
+}
+// @media (min-width:1400px) {
+//     .home-layer-2 {
+//         display: block;
+//     }
 // }
 .home {
-    .home-test {
-        background-color: hotpink;
-    }
-    @media (min-width: 1600px) {
-        .home-test {
-            background-color: khaki;
-        }
-    }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 820px;
-    
         h1{
-            color: $dark;
+            color: $black;
             font-family: $poppins;
             font-size: 60px;
             font-weight: 700;
             padding-bottom: 50px;
+            text-align: center;
         }
         p {
             padding-bottom: 35px;
+            text-align: center;
         }
-    } 
-
-    
+        .button {
+            padding: 20px 39px;
+        }
+    }   
 }
-
+.home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 1400px) {
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (min-width: 1400px) {
+    .home .container .home-left h1 {
+        text-align:unset;
+    } 
+    .home .container .home-left p {
+        text-align: unset;
+    }
+}
 .home-right {
+    display: none;
     width: 50%;
     position: relative;
-    
+    #screen1 {
+        margin-top: 40px;
+        margin-left: -80px;
+    }
 }
-
-#screen1 {
-    margin-left: -100px;
-    // width: 50%;
+@media(min-width: 1400px) {
+    .home-right {
+        display: block;
+    }
 }
