@@ -9,28 +9,24 @@
 }
 
 @media (min-width: 1400px) {
-.home-layer-2 {
-    background-image: url(../Images/Objects.svg);
-    background-repeat: no-repeat;
-    background-position: 900px -110px;
+    .home-layer-2 {
+        background-image: url(../Images/Objects.svg);
+        background-repeat: no-repeat;
+        background-position: 900px -110px;
+    }
 }
-}
-// @media (min-width:1400px) {
-//     .home-layer-2 {
-//         display: block;
-//     }
-// }
 .home {
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 820px;
+        height: 700px;
         h1{
             color: $black;
             font-family: $poppins;
             font-size: 60px;
             font-weight: 700;
+            margin-top: -30px;
             padding-bottom: 50px;
             text-align: center;
         }
@@ -43,11 +39,18 @@
         }
     }   
 }
+@media (min-width: 768px) {
+    .home .container {
+        height: 820px;
+        h1 {
+            margin-top: 0;
+        }
+    }
+}
 .home-left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items:center; 
 }
 @media (min-width: 1400px) {
     .home-left {
@@ -68,9 +71,18 @@
     display: none;
     width: 50%;
     position: relative;
+    // #blob1 {
+    //     height: 100%;
+    //     width: auto;
+    //     position: absolute;
+    //     top: 100px;
+    //     left: 900px;
+    //     z-index: 1;
+    // }
     #screen1 {
         margin-top: 40px;
         margin-left: -80px;
+        // z-index: 2;
     }
 }
 @media(min-width: 1400px) {

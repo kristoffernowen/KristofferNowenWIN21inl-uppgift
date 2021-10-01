@@ -1,7 +1,8 @@
 .features {
-    margin-top: 200px;
+    
     .container {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
     h1 {
@@ -11,27 +12,89 @@
         padding-bottom: 30px;
     }
     .features-left {
-        width: 444px;
-    }
-    #text-features-left {
-        padding-bottom: 40px;
-    }
-    .features-h1-div {
-        width: 408px;
+        max-width: 500px;
+        margin-bottom: 30px;
+        #text-features-left {
+            padding-bottom: 40px;
+            
+        }
+        .features-h1-div {
+            max-width: 500px;
+            h1 {
+                font-size: 40px;
+            }
+        }
     }
     .features-right {
-        padding-left: 58px;
-        width: 726px;
+        // padding-left: 10px;
+        // width: 726px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 350px;
         grid-template-rows: 1fr 1fr;
         row-gap: 70px;
-        column-gap: 150px;
+        justify-content: center;
     }
     .features-box {
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
         img {
             padding-bottom: 25px;
+        }   
+    }
+}
+@media (min-width: 768px) {
+    .features .container .features-right {
+        grid-template-columns: 350px 350px;
+
+        .features-box {
+                justify-content: space-evenly;
+                align-items:flex-start;
+                flex-direction: column; 
         }
-        
+    }
+    
+}
+@media (min-width: 1400px) {
+    .features { 
+        margin-top: 200px;
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .features-left {
+                max-width: unset;
+                width: 444px;
+                margin-bottom: 0;
+                #text-features-left {
+                    padding-bottom: 40px;   
+                }
+                .features-h1-div {
+                    max-width: unset;
+                    width: 408px;
+                    h1 {
+                        font-size: 48px;
+                    }
+                }
+            }
+            .features-right {
+                padding-left: 58px;
+                width: 726px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                row-gap: 70px;
+                column-gap: 150px;
+                .features-box {
+                    
+                    
+                    img {
+                        padding-bottom: 25px;
+                    } 
+                }
+            }
+        }
     }
 }

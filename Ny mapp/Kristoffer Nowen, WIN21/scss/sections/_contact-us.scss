@@ -6,27 +6,52 @@
         flex-direction: column;
 
         .div-contact-header {
-                width: 730px;
-                height: 134px;
+                max-width: 500px;
+                // height: 134px;
                 margin-bottom: 50px;
-            
             h1 {
                 text-align: center;
                 // padding: 0 80px 50px 80px;
             }
         }
+        @media (min-width: 768px) {
+            .div-contact-header {
+                max-width: 730px;
+                // width: 730px;
+                height: 134px;
+                margin-bottom: 50px;
+                // h1 {
+                //     padding: 0 80px 50px 80px;
+                //     text-align: unset;
+                // }
+            }
+        }
         .contact-us-text-div {
-            width:516px;
-            height: 67px; 
+            max-width: 500px;
+            // height: 67px; 
             text-align: center;    
-        }   
+        } 
+        // @media (min-width: 768px) {
+            // .contact-us-text-div {
+    //     max-width:unset;
+    //     width: 516px;
+    //     height: 67px; 
+    //     text-align: center;    
+    //     background-color: yellow;
+    // }   
     }
+    
     .numbers-flex {
-        display: flex;
-        justify-content: space-between;
-        div {
-            text-align: center;
-            padding: 100px 0 75px 0;
+        display: none;
+    }
+    @media (min-width: 768px) {
+        .numbers-flex {
+            display: flex;
+            justify-content: space-between;
+            div {
+                text-align: center;
+                padding: 100px 0 75px 0;
+            }
         }
     }
     h3 {
@@ -37,7 +62,7 @@
     }
     .contact-us-button-div {
         position: relative;
-        width: 630px;
+        max-width: 500px;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -47,15 +72,34 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: column;
         .button {
             padding: 17px 25px;
+            margin-top: 30px;
+        }
+    }
+    @media (min-width: 768px) {
+        .contact-us-button-div {
+            max-width: 630px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .button {
+                margin-top: 0;
+            }
         }
     }
     #map {
-        position: absolute;
-        z-index: -1;
-        top: -230px;
-        left:-75px;
+        display: none;
+    }
+    @media (min-width: 768px) {
+        #map {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: -230px;
+            left:-75px;
+        }
     }
     h2 {
         font-family: $poppins;
@@ -65,3 +109,5 @@
         padding-bottom: 5px;
     }
 }
+
+    
