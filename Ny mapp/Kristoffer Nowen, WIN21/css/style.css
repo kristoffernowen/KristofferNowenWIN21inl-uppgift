@@ -13,14 +13,14 @@
   line-height: 1.5;
 }
 
-html h1, body h1 {
+html h2, body h2 {
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 700;
   color: #252525;
 }
 
-html h2, body h2 {
+html h3, body h3 {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -132,7 +132,7 @@ html h2, body h2 {
 .navbar .container i:hover .navbar-search {
   display: block;
   position: absolute;
-  top: 20px;
+  top: 23px;
   left: -20px;
 }
 
@@ -153,13 +153,19 @@ html h2, body h2 {
   border: 0;
 }
 
-.navbar .container .navbar-mobile {
-  display: none;
+.navbar .container .navbar-mobile i {
+  text-align: center;
+  margin-top: -20px;
+  padding-left: 40px;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 768px) {
   .navbar .container .navbar-mobile {
     display: block;
+  }
+  .navbar .container .navbar-mobile i {
+    font-size: 4rem;
   }
 }
 
@@ -270,11 +276,11 @@ html h2, body h2 {
   justify-content: space-between;
 }
 
-.features h1 {
+.features h2 {
   padding-bottom: 45px;
 }
 
-.features h2 {
+.features h3 {
   padding-bottom: 30px;
 }
 
@@ -287,11 +293,11 @@ html h2, body h2 {
   padding-bottom: 40px;
 }
 
-.features .features-left .features-h1-div {
+.features .features-left .features-h2-div {
   max-width: 500px;
 }
 
-.features .features-left .features-h1-div h1 {
+.features .features-left .features-h2-div h2 {
   font-size: 40px;
 }
 
@@ -342,11 +348,11 @@ html h2, body h2 {
   .features .container .features-left #text-features-left {
     padding-bottom: 40px;
   }
-  .features .container .features-left .features-h1-div {
+  .features .container .features-left .features-h2-div {
     max-width: unset;
     width: 408px;
   }
-  .features .container .features-left .features-h1-div h1 {
+  .features .container .features-left .features-h2-div h2 {
     font-size: 48px;
   }
   .features .container .features-right {
@@ -394,7 +400,7 @@ html h2, body h2 {
   margin-bottom: 50px;
 }
 
-.pages .container .pages-right-div h1 {
+.pages .container .pages-right-div h2 {
   text-align: center;
   padding-bottom: 15px;
 }
@@ -416,7 +422,7 @@ html h2, body h2 {
   display: none;
 }
 
-.pages .container .pages-right-div .pages-grid h2 {
+.pages .container .pages-right-div .pages-grid h4 {
   font-family: "Poppins", sans-serif;
   font-size: 30px;
   color: #F23779;
@@ -440,7 +446,7 @@ html h2, body h2 {
   .pages .container .pages-right-div {
     height: 950px;
   }
-  .pages .container .pages-right-div h1 {
+  .pages .container .pages-right-div h2 {
     padding-bottom: 80px;
   }
   .pages .container .pages-right-div .pages-grid {
@@ -449,13 +455,13 @@ html h2, body h2 {
     grid-template-rows: 1fr 1fr 1fr;
     row-gap: 60px;
   }
-  .pages .container .pages-right-div .pages-grid h2 {
+  .pages .container .pages-right-div .pages-grid h4 {
     font-size: 60px;
   }
   .pages .container .pages-right-div .pages-grid div {
     display: block;
   }
-  .pages .container .pages-right-div .pages-grid div h1 {
+  .pages .container .pages-right-div .pages-grid div h2 {
     text-align: unset;
   }
   .pages .container .pages-right-div .pages-grid div h3 {
@@ -484,7 +490,7 @@ html h2, body h2 {
   margin-bottom: 50px;
 }
 
-.contact-us .container .contact-header-text-flex .div-contact-header h1 {
+.contact-us .container .contact-header-text-flex .div-contact-header h2 {
   text-align: center;
 }
 
@@ -516,7 +522,7 @@ html h2, body h2 {
   }
 }
 
-.contact-us .container h3 {
+.contact-us .container h4 {
   font-family: "Poppins", sans-serif;
   font-size: 42px;
   font-weight: 500;
@@ -569,7 +575,7 @@ html h2, body h2 {
   }
 }
 
-.contact-us .container h2 {
+.contact-us .container h3 {
   font-family: "Poppins", sans-serif;
   font-size: 21px;
   font-weight: 600;
@@ -587,7 +593,7 @@ html h2, body h2 {
   max-width: 100%;
 }
 
-.blog-header h1 {
+.blog-header h2 {
   font-family: "Poppins", sans-serif;
   font-size: 48px;
   font-weight: 700;
@@ -642,7 +648,7 @@ html h2, body h2 {
   padding-bottom: 30px;
 }
 
-.blog-grid h3 {
+.blog-grid h4 {
   font-family: "Poppins", sans-serif;
   font-size: 22px;
   font-weight: bold;
@@ -650,7 +656,7 @@ html h2, body h2 {
   padding-bottom: 15px;
 }
 
-.blog-grid h4 {
+.blog-grid h5 {
   color: #FF6803;
   font-family: "Poppins", sans-serif;
   font-size: 14px;

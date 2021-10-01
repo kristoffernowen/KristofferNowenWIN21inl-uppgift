@@ -23,7 +23,7 @@
         .pages-right-div {
             margin-bottom: 50px;
             // height: 850px;
-            h1 {
+            h2 {
                 text-align: center;
                 padding-bottom: 15px;
             }  
@@ -43,7 +43,7 @@
                     display: none;
                     
                 }
-                h2 {
+                h4 {
                     font-family: $poppins;
                     font-size: 30px;
                     color: $pinkish;
@@ -65,7 +65,7 @@
         @media (min-width: 768px) {
             .pages-right-div {
                 height: 950px;
-                h1 {
+                h2 {
                     // padding-bottom: 120px;
                     padding-bottom: 80px;
                 }  
@@ -74,12 +74,12 @@
                     column-gap: 60px;
                     grid-template-rows: 1fr 1fr 1fr;
                     row-gap: 60px;
-                    h2 {
+                    h4 {
                         font-size: 60px;
                     }
                     div {
                         display: block;
-                        h1 {
+                        h2 {
                             text-align: unset;
                         }
                         h3 {
