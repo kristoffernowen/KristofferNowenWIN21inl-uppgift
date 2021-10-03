@@ -1,85 +1,109 @@
 
 .navbar {
     background-color: #F8F9FE;
+    width: 100%;
+    position:fixed;
+     top: 0;
+    left: 0;
+    z-index: 3;
+    
 
     .container {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         border-bottom: 2px solid rgba(196, 218, 233, 0.15);  
+        position: relative;
         .brand-div {
+            
             padding-top: 50px;
             padding-bottom: 40px;
             font-family: $poppins;
             font-weight: 700;
             display: flex;
             align-items: flex-start;
+            #ml-logo {
+                width: 90%;
+                height: auto;
+            }
+            @media (min-width: 768px) {
+                #ml-logo {
+                width: unset;
+                height: unset;
+                }
+            }
         }
         .navbar-right-div {
             display: none;
-            padding-top: 10px;
         }
         @media(min-width:1400px) {
             .navbar-right-div {
                 display: block;
-            }
-        }
-        a {
-            padding-left: 25px;
-            padding-right: 23px;
-            text-decoration: none;
-            font-size: 17px;
-            color: $black;
-            font-weight: 500;
-            &:hover {
-                transition: ease-in-out 0.2s;
-                color: $orange;
-            }
-        }
-        i {
-            padding-right: 23px;
-            font-size: 1.3rem;
-                .navbar-search {
-                    display: none;
+                padding-top: 10px;
+                position:absolute;
+                right: 0;
+                z-index: 2;
+                a {
+                    padding-left: 25px;
+                    padding-right: 23px;
+                    text-decoration: none;
+                    font-size: 17px;
+                    color: $black;
+                    font-weight: 500;
+                    &:hover {
+                        transition: ease-in-out 0.2s;
+                        color: $orange;
+                    }
                 }
-            &:hover {
-                transition: ease-in-out 0.5s;
-                color: $orange;
-                .navbar-search {
-                    display: block;
-                    position:absolute;
-                    top: 23px;
-                    left: -20px;
-                }
-            }   
-        }
-
-        button { 
-            background-color: transparent;
-            border: 1px solid #FF6803;
-            border-radius: 5px;
-            padding: 12px 22px;
-            font-size: 17px;
-            color: $black;
-            font-weight: 500;
-            &:hover {
-                transition: ease-in-out 0.5s;
-                color:$orange;
-                background-color: $black;
-                border: 0;
-            }
-        }
-        .navbar-mobile {
-            // display: flex;
-            // flex-direction: column;
-            // justify-content: center;
-            // align-items: center;
                 i {
-                    text-align: center;
-                    margin-top: -20px;
-                    padding-left: 40px;
+                    padding-right: 23px;
+                    font-size: 1.3rem;
+                        .navbar-search {
+                            display: none;
+                        }
+                    &:hover {
+                        transition: ease-in-out 0.5s;
+                        color: $orange;
+                        .navbar-search {
+                            display: block;
+                            position:absolute;
+                            top: 23px;
+                            left: -20px;
+                        }
+                    }      
+                }
+    
+                button { 
+                    background-color: transparent;
+                    border: 1px solid #FF6803;
+                    border-radius: 5px;
+                    padding: 12px 22px;
+                    font-size: 17px;
+                    color: $black;
+                    font-weight: 500;
+                    &:hover {
+                        transition: ease-in-out 0.5s;
+                        color:$orange;
+                        background-color: $black;
+                        border: 0;
+                    }
+                }   
+            }   
+            }
+        
+        
+        .navbar-mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+                i {
                     font-size: 2.5rem;
+                    padding-top: 10px;
+                    &:hover {
+                        transition: ease-in-out 0.2s;
+                        color: $orange;
+                    }
                 }
         }
         @media (min-width: 768px) { 
@@ -87,6 +111,7 @@
                 display:block;
                 i {
                     font-size: 4rem;
+                    padding-top: 0;
                 }
             }
         }

@@ -7,38 +7,22 @@
 
         .div-contact-header {
                 max-width: 500px;
-                // height: 134px;
                 margin-bottom: 50px;
             h2 {
                 text-align: center;
-                // padding: 0 80px 50px 80px;
             }
         }
         @media (min-width: 768px) {
             .div-contact-header {
                 max-width: 730px;
-                // width: 730px;
                 height: 134px;
                 margin-bottom: 50px;
-                // h1 {
-                //     padding: 0 80px 50px 80px;
-                //     text-align: unset;
-                // }
             }
         }
         .contact-us-text-div {
-            max-width: 500px;
-            // height: 67px; 
+            max-width: 505px;
             text-align: center;    
-        } 
-        // @media (min-width: 768px) {
-            // .contact-us-text-div {
-    //     max-width:unset;
-    //     width: 516px;
-    //     height: 67px; 
-    //     text-align: center;    
-    //     background-color: yellow;
-    // }   
+        }   
     }
     
     .numbers-flex {
@@ -50,16 +34,17 @@
             justify-content: space-between;
             div {
                 text-align: center;
-                padding: 100px 0 75px 0;
+                padding: 80px 0 70px 0;
+                h4 {
+                    font-family: $poppins;
+                    font-size: 42px;
+                    font-weight: 500;
+                    color: $pinkish;
+                }
             }
         }
     }
-    h4 {
-        font-family: $poppins;
-        font-size: 42px;
-        font-weight: 500;
-        color: $pinkish;
-    }
+                
     .contact-us-button-div {
         position: relative;
         max-width: 500px;
@@ -73,6 +58,13 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
+        h3 {
+            font-family: $poppins;
+            font-size: 21px;
+            font-weight: 600;
+            color: $black;
+            padding-bottom: 5px;
+        }
         .button {
             padding: 17px 25px;
             margin-top: 30px;
@@ -97,16 +89,9 @@
             display: block;
             position: absolute;
             z-index: -1;
-            top: -230px;
-            left:-75px;
+            top: -225px;
+            left:-70px;
         }
-    }
-    h3 {
-        font-family: $poppins;
-        font-size: 21px;
-        font-weight: 600;
-        color: $black;
-        padding-bottom: 5px;
     }
 }
 

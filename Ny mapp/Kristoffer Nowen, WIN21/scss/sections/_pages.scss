@@ -22,7 +22,6 @@
         
         .pages-right-div {
             margin-bottom: 50px;
-            // height: 850px;
             h2 {
                 text-align: center;
                 padding-bottom: 15px;
@@ -32,8 +31,6 @@
                 column-gap: 10px;
                 grid-template-rows: repeat(30px 50px);
                 row-gap: 25px;
-                // grid-template-rows: 1fr 1fr 1fr;
-                // row-gap: 60px;
                 div {
                     display: flex;
                     flex-direction: column;
@@ -50,6 +47,7 @@
                     text-align:left;
                     margin-top: -15px;
                 }
+                
                 h3 {
                     font-family: $poppins;
                     font-size: 24px;
@@ -66,7 +64,6 @@
             .pages-right-div {
                 height: 950px;
                 h2 {
-                    // padding-bottom: 120px;
                     padding-bottom: 80px;
                 }  
                 .pages-grid {
@@ -93,6 +90,11 @@
                         display: block;
                     }
                 }    
+            }
+        }
+        @media (min-width: 1400px) {
+            .pages-right-div h2 {
+                text-align: start;
             }
         }
         
